@@ -57,5 +57,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let movie = movies[indexPath.row]
+        
+        performSegueWithIdentifier("DetailsVCSegue", sender: movie)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "DetailsVCSegue"{
+            var destinationVC = segue.destinationViewController as! DetailsVC
+            destinationVC.movie = sender as! Movie
+        }
+    }
 }
 

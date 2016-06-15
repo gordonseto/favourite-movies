@@ -17,6 +17,7 @@
 		8E8AAFEF1D11B2DD00CC8158 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8AAFED1D11B2DD00CC8158 /* Movie+CoreDataProperties.swift */; };
 		8E8AAFF01D11B2DD00CC8158 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8AAFEE1D11B2DD00CC8158 /* Movie.swift */; };
 		8E8AAFF21D11B7C900CC8158 /* NewMovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8AAFF11D11B7C900CC8158 /* NewMovieVC.swift */; };
+		8E8AAFF41D11C00D00CC8158 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8AAFF31D11C00D00CC8158 /* DetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8E8AAFED1D11B2DD00CC8158 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Movie+CoreDataProperties.swift"; path = "../Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8E8AAFEE1D11B2DD00CC8158 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movie.swift; path = ../Movie.swift; sourceTree = "<group>"; };
 		8E8AAFF11D11B7C900CC8158 /* NewMovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMovieVC.swift; sourceTree = "<group>"; };
+		8E8AAFF31D11C00D00CC8158 /* DetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				8E8AAFCD1D11A9C300CC8158 /* ViewController.swift */,
 				8E8AAFF11D11B7C900CC8158 /* NewMovieVC.swift */,
+				8E8AAFF31D11C00D00CC8158 /* DetailsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E8AAFD41D11A9C400CC8158 /* favourite_movies.xcdatamodeld in Sources */,
+				8E8AAFF41D11C00D00CC8158 /* DetailsVC.swift in Sources */,
 				8E8AAFEF1D11B2DD00CC8158 /* Movie+CoreDataProperties.swift in Sources */,
 				8E8AAFF01D11B2DD00CC8158 /* Movie.swift in Sources */,
 				8E8AAFCE1D11A9C300CC8158 /* ViewController.swift in Sources */,

@@ -57,12 +57,6 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBa-Rs-Anp">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="93"/>
-                                                    <connections>
-                                                        <segue destination="kcI-IO-Jfb" kind="show" id="Ddj-T7-mA4"/>
-                                                    </connections>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7q-lX-eay">
                                                     <rect key="frame" x="91" y="36" width="501" height="21"/>
                                                     <constraints>
@@ -130,16 +124,17 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Q62-xP-aAb" id="fEP-xE-7Wy"/>
+                        <segue destination="kcI-IO-Jfb" kind="show" identifier="DetailsVCSegue" id="yEk-TW-7k1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6r7-8S-1LF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1601" y="359"/>
         </scene>
-        <!--View Controller-->
+        <!--DetailsVC-->
         <scene sceneID="Uzy-yF-MOw">
             <objects>
-                <viewController id="kcI-IO-Jfb" sceneMemberID="viewController">
+                <viewController id="kcI-IO-Jfb" customClass="DetailsVC" customModule="favourite_movies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o8O-47-ATx"/>
                         <viewControllerLayoutGuide type="bottom" id="Mhb-Vw-dV0"/>
@@ -147,8 +142,19 @@
                     <view key="view" contentMode="scaleToFill" id="yBo-o8-so9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drS-wb-yW4">
+                                <rect key="frame" x="279" y="219" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="movieTitle" destination="drS-wb-yW4" id="Zlq-kn-fHl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gj5-pV-Vg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
